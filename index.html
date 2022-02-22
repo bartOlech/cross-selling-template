@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .cross-selling-horizontal-line {
+      width: 100%;
+      height: 1px;
+      background: #D8D8D8;
+    }
+
+    .cross-selling-main-text {
+      text-align: center;
+      font-size: 22px;
+    }
+
+    .cross-selling-box-image {
+      width: 150px;
+      height: 150px;
+    }
+
+    .cross-selling-product-title {
+      font-size: 17px;
+      margin-bottom: 26px;
+    }
+
+    .cross-selling-product-price {
+      font-size: 23px;
+      font-weight: 300;
+    }
+
+    .cross-selling-input {
+      width: 40px;
+      height: 35px;
+      background: rgb(236, 236, 236);
+      border-radius: 4px;
+      border: none;
+      padding-left: 25px;
+    }
+
+    .cross-selling-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .cross-selling-box-up {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .cross-selling-vertical-line {
+      width: 1px;
+      height: 225px;
+      background: #D8D8D8;
+      margin-bottom: -50px;
+    }
+
+    .cross-selling-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 15px;
+    }
+
+    .cross-sellin-add-to-basket {
+      width: 215px;
+      height: 47px;
+      margin-top: 35px;
+      background: #FD4170;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      cursor: pointer;
+      transition: .3s;
+      font-size: 16px;
+    }
+
+    .cross-sellin-add-to-basket:hover {
+      background: #f13161;
+    }
+
+    @media screen and (max-width: 1200px) {
+      .cross-selling-container {
+        flex-direction: column;
+      }
+
+      .cross-selling-vertical-line {
+        display: none;
+      }
+
+      .cross-selling-box-2 {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cross-selling-horizontal-line"></div>
+  <h3 class="cross-selling-main-text">Klienci, którzy zamówili ten produkt kupili także:</h3>
+  <div class="cross-selling-container">
+    <div class="cross-selling-box">
+      <div class="cross-selling-box-up">
+        <img class="cross-selling-box-image" src="./image.png" alt="produkt proponowany">
+        <div class="cross-selling-product-info">
+          <div class="cross-selling-product-title">Kosz na zabawki do zabawy na zabawki dla dziecka</div>
+          <div class="cross-selling-product-price">14.33 zł</div>
+        </div>
+        <form action="">
+          <input class="cross-selling-input" value="1" type="number">
+        </form>
+      </div>
+      <button class="cross-sellin-add-to-basket">Ddodaj do koszyka</button>
+    </div>
+    <div class="cross-selling-vertical-line"></div>
+    <div class="cross-selling-box cross-selling-box-2">
+      <div class="cross-selling-box-up">
+        <img class="cross-selling-box-image" src="./image.png" alt="produkt proponowany">
+        <div class="cross-selling-product-info">
+          <div class="cross-selling-product-title">Kosz na zabawki do zabawy na zabawki dla dziecka</div>
+          <div class="cross-selling-product-price">14.33 zł</div>
+        </div>
+        <form action="">
+          <input class="cross-selling-input" value="1" type="number">
+        </form>
+      </div>
+      <button class="cross-sellin-add-to-basket">Ddodaj do koszyka</button>
+    </div>
+  </div>
+</body>
+</html>
